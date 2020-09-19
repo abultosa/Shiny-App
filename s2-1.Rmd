@@ -1,0 +1,40 @@
+---
+title: "Developing Data Products with Shiny App and Reproducible Pitch"
+author: "Student!"
+date: "9/18/2020"
+output: slidy_presentation
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## Developing Data Products - Shiny Application and Reproducible Pitch
+
+Overview
+
+For the developing Data Products course project I have created a Shiny Application which will predict the Ozone level from airquality dataset on the basis of chosen parameters.
+
+The data is from airquality dataset and is attempting to show how the Ozone level changes as the temperature changes using the slider shiny app.  The data is generated accordingly to adjust the selected values.
+
+
+## Slide with Bullets and how to use.
+
+- After downloading the above mentioned files you have to keep all the files in a folder and run runApp() function. 
+- Instantly application will be open locally in default browser. In the html page you will see at left side there are two input parameters you have to select by increasing/decreasing the values. After selection you have to press the Submit button, the Ozone level will be shown at right side.
+The predictors are :
+- Ozone and Temp
+- The app will show the changes predicted by the two models and they would show the same value as they get to the same data and diverge again as the temperature changes.
+
+## Slide with R Output
+Here is the basic summary stastics for the entire data.
+```{r, echo = TRUE}
+summary(airquality)
+```
+
+## Slide with Plot
+Here is the basic plot for the selected variables
+```{r}
+plot(airquality$Ozone, airquality$Temp)
+```
+
